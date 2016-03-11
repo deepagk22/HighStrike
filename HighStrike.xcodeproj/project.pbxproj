@@ -14,6 +14,7 @@
 		9A99A2A01BFD0DFC0076D07D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A99A29E1BFD0DFC0076D07D /* LaunchScreen.storyboard */; };
 		9A99A2AB1BFD0DFD0076D07D /* HighStrikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A99A2AA1BFD0DFD0076D07D /* HighStrikeTests.swift */; };
 		9A99A2B61BFD0DFD0076D07D /* HighStrikeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A99A2B51BFD0DFD0076D07D /* HighStrikeUITests.swift */; };
+		9A99A2CA1BFD35160076D07D /* Metal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9A99A2C91BFD35160076D07D /* Metal.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		9A99A2B11BFD0DFD0076D07D /* HighStrikeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HighStrikeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A99A2B51BFD0DFD0076D07D /* HighStrikeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighStrikeUITests.swift; sourceTree = "<group>"; };
 		9A99A2B71BFD0DFD0076D07D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A99A2C91BFD35160076D07D /* Metal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Metal.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		9A99A2941BFD0DFC0076D07D /* HighStrike */ = {
 			isa = PBXGroup;
 			children = (
+				9A99A2C81BFD35160076D07D /* sounds */,
 				9A99A2951BFD0DFC0076D07D /* AppDelegate.swift */,
 				9A99A2971BFD0DFC0076D07D /* ViewController.swift */,
 				9A99A2991BFD0DFC0076D07D /* Main.storyboard */,
@@ -123,6 +126,14 @@
 				9A99A2B71BFD0DFD0076D07D /* Info.plist */,
 			);
 			path = HighStrikeUITests;
+			sourceTree = "<group>";
+		};
+		9A99A2C81BFD35160076D07D /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				9A99A2C91BFD35160076D07D /* Metal.mp3 */,
+			);
+			path = sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +245,7 @@
 			files = (
 				9A99A2A01BFD0DFC0076D07D /* LaunchScreen.storyboard in Resources */,
 				9A99A29D1BFD0DFC0076D07D /* Assets.xcassets in Resources */,
+				9A99A2CA1BFD35160076D07D /* Metal.mp3 in Resources */,
 				9A99A29B1BFD0DFC0076D07D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,10 +414,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = HighStrike/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dojo.HighStrike;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -413,10 +428,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = HighStrike/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dojo.HighStrike;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -487,6 +505,7 @@
 				9A99A2BC1BFD0DFD0076D07D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A99A2BD1BFD0DFD0076D07D /* Build configuration list for PBXNativeTarget "HighStrikeTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +514,7 @@
 				9A99A2BF1BFD0DFD0076D07D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A99A2C01BFD0DFD0076D07D /* Build configuration list for PBXNativeTarget "HighStrikeUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +523,7 @@
 				9A99A2C21BFD0DFD0076D07D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
